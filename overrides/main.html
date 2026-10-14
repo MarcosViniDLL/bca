@@ -1,0 +1,41 @@
+﻿{% extends "base.html" %}
+
+{% block footer %}
+  <footer class="bca-global-footer">
+    <div class="bca-footer-inner">
+
+      <div class="bca-footer-brand">
+        <div class="bca-footer-logo" aria-hidden="true">
+          <span>✦</span>
+        </div>
+        <div>
+          <div class="bca-footer-name">BCA</div>
+          <div class="bca-footer-fullname">Biblioteca Colaborativa Acadêmica</div>
+          <p class="bca-footer-tagline">Conhecimento que compartilhamos.</p>
+        </div>
+      </div>
+
+      <div class="bca-footer-description">
+        Um espaço dedicado à organização, à descoberta e ao compartilhamento responsável de materiais acadêmicos.
+      </div>
+
+      <div class="bca-footer-divider"></div>
+
+      <div class="bca-footer-bottom">
+        <div class="bca-footer-copy">
+          <span>© 2026 BCA</span>
+          <span class="bca-footer-dot">•</span>
+          <span>Feito para aprender, criado para compartilhar.</span>
+        </div>
+
+        <nav class="bca-footer-links" aria-label="Navegação do rodapé">
+          <a href="{{ 'index.md' | url }}">Início</a>
+          <a href="{{ 'catalogo.md' | url }}">Catálogo</a>
+          <a href="{{ 'sobre.md' | url }}">Sobre a BCA</a>
+          <a href="https://github.com/MarcosViniDLL/bca" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+{% endblock %}

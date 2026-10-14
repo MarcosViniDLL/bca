@@ -1,0 +1,49 @@
+﻿site_name: BCA
+site_description: Biblioteca Colaborativa Acadêmica
+site_author: BCA
+
+theme:
+  custom_dir: overrides
+  name: material
+  language: pt-BR
+  palette:
+    - scheme: default
+      primary: custom
+      accent: amber
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - assets/css/bca.css
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.superfences
+
+nav:
+  - Início: index.md
+  - Catálogo: catalogo.md
+  - Períodos:
+      - 1º Período:
+          - Visão geral: periodos/primeiro-periodo.md
+          - Habilidades Integradas em Língua Inglesa I: disciplinas/habilidades-integradas-lingua-inglesa-i.md
+          - Introdução aos Estudos Literários: disciplinas/introducao-aos-estudos-literarios.md
+          - Leitura e Produção de Textos: disciplinas/leitura-e-producao-de-textos.md
+          - Fundamentos da Educação: disciplinas/fundamentos-da-educacao.md
+          - Introdução aos Estudos Linguísticos I: disciplinas/introducao-aos-estudos-linguisticos-i.md
+      - 2º Período:
+          - Visão geral: periodos/segundo-periodo.md
+          - Introdução aos Estudos Linguísticos II: disciplinas/introducao-aos-estudos-linguisticos-ii.md
+          - Gêneros Acadêmicos: disciplinas/generos-academicos.md
+          - Teoria Literária: disciplinas/teoria-literaria.md
+          - Habilidades Integradas em Língua Inglesa II: disciplinas/habilidades-integradas-lingua-inglesa-ii.md
+          - Fonética e Fonologia da Língua Portuguesa: disciplinas/fonetica-e-fonologia-da-lingua-portuguesa.md
+  - Sobre a BCA: sobre.md
+
