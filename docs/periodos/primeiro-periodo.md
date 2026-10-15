@@ -35,6 +35,6 @@ Selecione uma disciplina para consultar os materiais de estudo correspondentes.
 
 </div>
 
-[← Voltar ao catálogo](../)
+[← Voltar ao catálogo](/catalogo)
 
 
