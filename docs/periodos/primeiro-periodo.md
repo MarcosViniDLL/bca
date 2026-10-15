@@ -35,6 +35,4 @@ Selecione uma disciplina para consultar os materiais de estudo correspondentes.
 
 </div>
 
-[← Voltar ao catálogo](../../catalogo)
-
-
+<a class="bca-back-link" href="/bca/catalogo/">← Voltar ao catálogo</a>
