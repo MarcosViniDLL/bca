@@ -1147,3 +1147,162 @@
         padding: 0.65rem 0.85rem;
     }
 }
+
+/* BCA — Header personalizado: livro aberto */
+.md-header {
+  background: #17283E;
+}
+
+.md-header__inner {
+  gap: 0.75rem;
+}
+
+.md-header__button.md-logo {
+  display: inline-flex;
+  width: 3.65rem;
+  height: 3.65rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.55rem 0 0;
+  padding: 0;
+  border-radius: 10px;
+  background: #E9D7B5;
+}
+
+.md-header .md-header__button.md-logo img,
+.md-header .md-header__button.md-logo svg {
+  height: 28px !important;
+  width: auto !important;
+  max-height: none !important;
+  max-width: none !important;
+}
+
+.md-header__title {
+  min-width: 0;
+  font-weight: 750;
+  letter-spacing: 0.015em;
+}
+
+.md-search__form {
+  border: 1px solid rgba(233, 215, 181, 0.32);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.md-search__form:focus-within {
+  border-color: #E9D7B5;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.md-search__input {
+  color: #FFFFFF;
+}
+
+.md-search__input::placeholder {
+  color: #D6DEEA;
+}
+
+.md-search__icon {
+  color: #E9D7B5;
+}
+
+@media screen and (min-width: 960px) {
+  .md-header__inner {
+    gap: 1rem;
+  }
+
+  .md-search {
+    width: 15rem;
+    padding: 0;
+  }
+
+  .md-search__form {
+    height: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .md-header__button.md-logo {
+    width: 2.35rem;
+    height: 2.35rem;
+  }
+
+  .md-header__button.md-logo img,
+  .md-header__button.md-logo svg {
+    width: 2.35rem;
+    height: 2.35rem;
+  }
+}
+
+/* BCA — Cabeçalho atualizado: livro aberto e busca integrada */
+.md-header {
+  background: #17283E;
+}
+
+.md-header__inner {
+  gap: 0;
+}
+
+.md-header__button.md-logo {
+  display: inline-flex;
+  width: auto;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin: 0.2rem;
+  padding: 0.4rem;
+  border-radius: 6px;
+  background: transparent;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  width: auto;
+  height: 1rem;
+  object-fit: contain;
+}
+
+.md-header__title {
+  min-width: 0;
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+.md-search__form {
+  border: 0;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: background 0.2s ease;
+}
+
+.md-search__form:focus-within {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.md-search__input {
+  color: #FFFFFF;
+}
+
+.md-search__input::placeholder {
+  color: #D6DEEA;
+}
+
+.md-search__icon {
+  color: #E9D7B5;
+}
+
+@media screen and (min-width: 960px) {
+  .md-header__inner {
+    gap: 0;
+  }
+
+  .md-search {
+    width: 12.1rem;
+    padding: 0;
+  }
+
+  .md-search__form {
+    height: 1.8rem;
+  }
+}

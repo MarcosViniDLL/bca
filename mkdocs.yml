@@ -1,8 +1,9 @@
-﻿site_name: BCA
+﻿site_name: Biblioteca Colaborativa Acadêmica
 site_description: Biblioteca Colaborativa Acadêmica
-site_author: BCA
+site_author: Marcos Vinicius
 
 theme:
+  logo: assets/images/bca-livro.svg
   custom_dir: overrides
   name: material
   language: pt-BR
@@ -17,6 +18,9 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 extra_css:
   - assets/css/bca.css
@@ -46,4 +50,5 @@ nav:
           - Habilidades Integradas em Língua Inglesa II: disciplinas/habilidades-integradas-lingua-inglesa-ii.md
           - Fonética e Fonologia da Língua Portuguesa: disciplinas/fonetica-e-fonologia-da-lingua-portuguesa.md
   - Sobre a BCA: sobre.md
+
 
