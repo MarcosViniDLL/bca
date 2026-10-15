@@ -1,4 +1,6 @@
-﻿# Sobre a BCA
+﻿[← Voltar ao início](index.md){ .bca-back-link }
+
+# Sobre a BCA
 
 A **Biblioteca Colaborativa Acadêmica** nasceu com uma ideia simples: tornar os materiais de estudo mais organizados e fáceis de encontrar.
 

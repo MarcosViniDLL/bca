@@ -1,4 +1,6 @@
-﻿# Introdução aos Estudos Linguísticos II
+﻿[← Voltar ao 2º período](../periodos/segundo-periodo.md){ .bca-back-link }
+
+# Introdução aos Estudos Linguísticos II
 
 <div class="bca-section-label">2º PERÍODO</div>
 

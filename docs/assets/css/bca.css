@@ -1114,3 +1114,36 @@
     width: 100%;
   }
 }
+
+/* Botões de retorno da BCA */
+.bca-back-link {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 0 1.25rem;
+    padding: 0.6rem 0.9rem;
+    border: 1px solid #E9D7B5;
+    border-radius: 0.45rem;
+    background: #f7f2e8;
+    color: #17283E !important;
+    font-weight: 600;
+    text-decoration: none !important;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.bca-back-link:hover {
+    background: #E9D7B5;
+    color: #17283E !important;
+    transform: translateY(-1px);
+}
+
+.bca-back-link:focus-visible {
+    outline: 2px solid #17283E;
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    .bca-back-link {
+        margin-bottom: 1rem;
+        padding: 0.65rem 0.85rem;
+    }
+}

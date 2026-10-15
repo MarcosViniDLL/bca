@@ -1,4 +1,6 @@
-﻿# Leitura e Produção de Textos
+﻿[← Voltar ao 1º período](../periodos/primeiro-periodo.md){ .bca-back-link }
+
+# Leitura e Produção de Textos
 
 <div class="bca-section-label">1º PERÍODO</div>
 

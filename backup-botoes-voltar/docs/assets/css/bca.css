@@ -1,0 +1,1116 @@
+﻿:root {
+  --md-primary-fg-color: #17283e;
+  --md-primary-fg-color--light: #263d59;
+  --md-primary-fg-color--dark: #101c2c;
+  --md-accent-fg-color: #b58b48;
+  --bca-navy: #17283e;
+  --bca-gold: #b58b48;
+  --bca-cream: #f7f5f0;
+  --bca-muted: #687586;
+}
+
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #fbfaf7;
+  --md-code-bg-color: #f0eee8;
+}
+
+.md-header {
+  background: var(--bca-navy);
+}
+
+.md-tabs {
+  background: #20344d;
+}
+
+.md-main__inner {
+  margin-top: 1rem;
+}
+
+.md-content {
+  max-width: 100%;
+}
+
+.md-content__inner {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.md-typeset h1 {
+  color: var(--bca-navy);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+}
+
+.md-typeset h2 {
+  color: var(--bca-navy);
+  font-weight: 750;
+  letter-spacing: -0.025em;
+}
+
+.bca-hero {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 2rem;
+  padding: clamp(2rem, 6vw, 4.5rem);
+  border-radius: 22px;
+  color: #fff;
+  background: linear-gradient(125deg, #17283e 0%, #263f5b 68%, #42536a 100%);
+}
+
+.bca-hero::after {
+  position: absolute;
+  right: -65px;
+  bottom: -120px;
+  width: 280px;
+  height: 280px;
+  border: 1px solid rgba(233, 215, 181, 0.28);
+  border-radius: 50%;
+  content: "";
+  box-shadow: 0 0 0 30px rgba(233, 215, 181, 0.04),
+              0 0 0 65px rgba(233, 215, 181, 0.035);
+}
+
+.bca-eyebrow {
+  margin-bottom: 0.7rem;
+  color: #e9d7b5;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.md-typeset .bca-hero h1 {
+  max-width: 650px;
+  margin: 0 0 1rem;
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.12;
+}
+
+.bca-hero p {
+  position: relative;
+  z-index: 1;
+  max-width: 570px;
+  color: #e1e7ef;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.bca-actions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.md-typeset .bca-button {
+  display: inline-block;
+  padding: 0.75rem 1.15rem;
+  border: 1px solid #e9d7b5;
+  border-radius: 9px;
+  color: #17283e;
+  background: #e9d7b5;
+  font-size: 0.85rem;
+  font-weight: 750;
+  text-decoration: none;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.md-typeset .bca-button:hover {
+  transform: translateY(-2px);
+  background: #f4e7ce;
+}
+
+.md-typeset .bca-button--outline {
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #fff;
+  background: transparent;
+}
+
+.md-typeset .bca-button--outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.bca-section-label {
+  margin-bottom: 0.3rem;
+  color: var(--bca-gold);
+  font-size: 0.73rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.bca-intro {
+  margin-bottom: 1.5rem;
+  color: var(--bca-muted);
+}
+
+.bca-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.bca-card {
+  min-width: 0;
+  padding: 1.35rem;
+  border: 1px solid #e8e5dd;
+  border-radius: 15px;
+  background: #fff;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.bca-card:hover {
+  transform: translateY(-3px);
+  border-color: #d3bc91;
+  box-shadow: 0 10px 28px rgba(23, 40, 62, 0.07);
+}
+
+.bca-card-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  background: #f3eee3;
+  font-size: 1.35rem;
+}
+
+.md-typeset .bca-card h3 {
+  margin: 0 0 0.45rem;
+  color: var(--bca-navy);
+  font-size: 1.02rem;
+}
+
+.bca-card p {
+  margin: 0 0 0.9rem;
+  color: var(--bca-muted);
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.md-typeset .bca-card a {
+  color: #8b672f;
+  font-size: 0.84rem;
+  font-weight: 750;
+}
+
+.bca-note {
+  padding: 1.2rem 1.4rem;
+  border-left: 3px solid var(--bca-gold);
+  border-radius: 0 10px 10px 0;
+  background: #f3f0e8;
+  color: #4e5b69;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.bca-subject {
+  display: block;
+  padding: 1.25rem;
+  border: 1px solid #e8e5dd;
+  border-radius: 13px;
+  color: var(--bca-navy);
+  background: #fff;
+  text-decoration: none !important;
+}
+
+.bca-subject:hover {
+  border-color: var(--bca-gold);
+}
+
+.bca-subject strong {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.bca-subject span {
+  color: var(--bca-muted);
+  font-size: 0.85rem;
+}
+
+.bca-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e8e5dd;
+  color: var(--bca-muted);
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 760px) {
+  .bca-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bca-hero {
+    padding: 2rem 1.4rem;
+    border-radius: 15px;
+  }
+}
+
+/* BCA — Rodape institucional global */
+.bca-global-footer {
+  margin-top: 3rem;
+  color: #e3e8ef;
+  background: #17283e;
+}
+
+.bca-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 1.5rem;
+}
+
+.bca-footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bca-footer-logo {
+  display: flex;
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #b58b48;
+  border-radius: 14px;
+  color: #17283e;
+  background: #e9d7b5;
+  font-size: 1.8rem;
+}
+
+.bca-footer-name {
+  color: #fff;
+  font-size: 1.55rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+}
+
+.bca-footer-fullname {
+  color: #e9d7b5;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.bca-footer-tagline {
+  margin: 0.45rem 0 0;
+  color: #c4cfdd;
+  font-size: 0.85rem;
+}
+
+.bca-footer-description {
+  max-width: 650px;
+  margin-top: 1.4rem;
+  color: #c4cfdd;
+  font-size: 0.88rem;
+  line-height: 1.9;
+}
+
+.bca-footer-divider {
+  height: 1px;
+  margin: 2rem 0 1.2rem;
+  background: rgba(233, 215, 181, 0.22);
+}
+
+.bca-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+}
+
+.bca-footer-copy {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  color: #aebccc;
+  font-size: 0.76rem;
+}
+
+.bca-footer-dot {
+  color: #e9d7b5;
+}
+
+.bca-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.15rem;
+}
+
+.bca-footer-links a {
+  color: #e3e8ef !important;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.bca-footer-links a:hover {
+  color: #e9d7b5 !important;
+}
+
+@media screen and (max-width: 600px) {
+  .bca-footer-inner {
+    padding: 2.2rem 1rem 1.2rem;
+  }
+
+  .bca-footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .bca-footer-links {
+    gap: 0.8rem 1rem;
+  }
+}
+
+/* ==========================================
+   BCA — Cartões de materiais acadêmicos
+   ========================================== */
+
+.bca-materials {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.bca-material-card {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1.25rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 14px;
+  background: var(--md-default-bg-color);
+  box-shadow: 0 3px 12px rgba(23, 40, 62, 0.045);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.bca-material-card:hover {
+  border-color: #d4b779;
+  box-shadow: 0 8px 22px rgba(23, 40, 62, 0.09);
+  transform: translateY(-2px);
+}
+
+.bca-material-icon {
+  display: flex;
+  flex: 0 0 54px;
+  width: 54px;
+  height: 62px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #f7eee0;
+  color: #8d6427;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  position: relative;
+}
+
+.bca-material-icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px 10px 0 0;
+  background: #c49a4a;
+}
+
+.bca-material-info {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
+.bca-material-info h3 {
+  margin: 0 0 0.55rem !important;
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  color: var(--md-default-fg-color);
+}
+
+.bca-material-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.bca-material-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.55rem;
+  border-radius: 5px;
+  background: var(--md-code-bg-color);
+  color: var(--md-default-fg-color--light);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.bca-material-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.bca-material-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid #d7c29a;
+  border-radius: 7px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none !important;
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.bca-button-view {
+  background: transparent;
+  color: var(--md-default-fg-color) !important;
+}
+
+.bca-button-view:hover {
+  background: #f7eee0;
+  color: #17283e !important;
+  border-color: #c49a4a;
+}
+
+.bca-button-download {
+  background: #17283e;
+  border-color: #17283e;
+  color: #fff !important;
+}
+
+.bca-button-download:hover {
+  background: #263f5d;
+  border-color: #263f5d;
+}
+
+.bca-material-empty {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  border: 1px dashed var(--md-default-fg-color--lightest);
+  border-radius: 12px;
+  background: var(--md-code-bg-color);
+}
+
+.bca-material-empty-icon {
+  display: flex;
+  flex: 0 0 48px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: #f7eee0;
+  color: #8d6427;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.bca-material-empty strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.bca-material-empty p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light);
+}
+
+@media (max-width: 650px) {
+  .bca-material-card {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    padding: 1rem;
+  }
+
+  .bca-material-icon {
+    flex-basis: 46px;
+    width: 46px;
+    height: 54px;
+  }
+
+  .bca-material-info {
+    flex-basis: calc(100% - 65px);
+  }
+
+  .bca-material-actions {
+    width: 100%;
+  }
+
+  .bca-material-button {
+    flex: 1 1 auto;
+  }
+}
+
+/* ==========================================
+   BCA — Página inicial acadêmica elegante
+   ========================================== */
+
+.bca-home {
+  --bca-navy: #17283e;
+  --bca-navy-light: #233a56;
+  --bca-gold: #e9d7b5;
+  --bca-gold-strong: #b18a45;
+  --bca-ink: #253348;
+  --bca-muted: #737d8a;
+  --bca-paper: #fbfaf7;
+  color: var(--bca-ink);
+}
+
+.bca-home h1,
+.bca-home h2,
+.bca-home h3,
+.bca-home p {
+  font-family: inherit;
+}
+
+.bca-home .bca-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(230px, .75fr);
+  align-items: center;
+  gap: 2rem;
+  overflow: hidden;
+  min-height: 365px;
+  margin: 0 0 3.5rem;
+  padding: clamp(2rem, 5vw, 4rem);
+  border: 1px solid rgba(233, 215, 181, .15);
+  border-radius: 18px;
+  background:
+    radial-gradient(ellipse at 82% 48%, rgba(75, 96, 120, .28), transparent 42%),
+    linear-gradient(125deg, #17283e 0%, #1b3049 62%, #233a56 100%);
+  color: #fff;
+}
+
+.bca-home .bca-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+}
+
+.bca-home .bca-eyebrow,
+.bca-home .bca-section-kicker {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  color: var(--bca-gold-strong);
+  font-size: .69rem;
+  font-weight: 750;
+  letter-spacing: .13em;
+  line-height: 1.6;
+}
+
+.bca-home .bca-eyebrow {
+  color: var(--bca-gold);
+}
+
+.bca-home .bca-eyebrow-line {
+  width: 28px;
+  height: 1px;
+  background: var(--bca-gold);
+}
+
+.bca-home .bca-hero h1 {
+  max-width: 660px;
+  margin: 1.35rem 0 1rem;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.35rem, 5vw, 4.15rem);
+  font-weight: 500;
+  letter-spacing: -.045em;
+  line-height: 1.08;
+}
+
+.bca-home .bca-hero h1 span {
+  color: var(--bca-gold);
+}
+
+.bca-home .bca-hero-description {
+  max-width: 510px;
+  margin: 0;
+  color: #d6deea;
+  font-size: .98rem;
+  line-height: 1.9;
+}
+
+.bca-home .bca-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.7rem;
+}
+
+.bca-home .bca-home-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+  min-height: 44px;
+  padding: .75rem 1.1rem;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: .82rem;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: background .2s ease, transform .2s ease, border-color .2s ease;
+}
+
+.bca-home .bca-home-button:hover {
+  transform: translateY(-2px);
+}
+
+.bca-home .bca-home-button-primary {
+  background: var(--bca-gold);
+  color: var(--bca-navy) !important;
+}
+
+.bca-home .bca-home-button-primary:hover {
+  background: #f3e5ca;
+}
+
+.bca-home .bca-home-button-secondary {
+  border-color: rgba(233, 215, 181, .4);
+  background: transparent;
+  color: #fff !important;
+}
+
+.bca-home .bca-home-button-secondary:hover {
+  border-color: var(--bca-gold);
+  background: rgba(255, 255, 255, .06);
+}
+
+.bca-home .bca-hero-note {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  margin-top: 1.6rem;
+  color: #c2ccda;
+  font-size: .73rem;
+}
+
+.bca-home .bca-note-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--bca-gold);
+}
+
+.bca-home .bca-hero-art {
+  position: relative;
+  display: flex;
+  min-height: 265px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bca-home .bca-art-orbit {
+  position: absolute;
+  aspect-ratio: 1;
+  border: 1px solid rgba(233, 215, 181, .17);
+  border-radius: 50%;
+}
+
+.bca-home .bca-art-orbit-outer {
+  width: min(100%, 280px);
+}
+
+.bca-home .bca-art-orbit-inner {
+  width: min(77%, 215px);
+  border-style: dashed;
+  border-color: rgba(233, 215, 181, .24);
+}
+
+.bca-home .bca-art-book {
+  position: relative;
+  z-index: 1;
+  width: 142px;
+  transform: rotate(-5deg);
+  filter: drop-shadow(15px 18px 15px rgba(0, 0, 0, .2));
+}
+
+.bca-home .bca-book-top {
+  height: 12px;
+  border-radius: 4px 5px 0 0;
+  background: #f0dfc0;
+  transform: skewY(-7deg);
+  transform-origin: left bottom;
+}
+
+.bca-home .bca-book-cover {
+  display: flex;
+  min-height: 185px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(233, 215, 181, .55);
+  background: linear-gradient(145deg, #263e5a, #101f32);
+  box-shadow: inset 5px 0 rgba(233, 215, 181, .12);
+}
+
+.bca-home .bca-book-symbol {
+  color: var(--bca-gold);
+  font-size: 2.4rem;
+}
+
+.bca-home .bca-book-rule {
+  width: 47px;
+  height: 1px;
+  margin: .8rem 0;
+  background: var(--bca-gold);
+}
+
+.bca-home .bca-book-label {
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.1rem;
+  letter-spacing: .23em;
+}
+
+.bca-home .bca-book-subtitle {
+  margin-top: .65rem;
+  color: var(--bca-gold);
+  font-size: .47rem;
+  letter-spacing: .05em;
+}
+
+.bca-home .bca-book-pages {
+  height: 7px;
+  border-radius: 0 0 3px 3px;
+  background: repeating-linear-gradient(
+    to bottom, #f5ecd9 0, #f5ecd9 2px, #d7c8ad 2px, #d7c8ad 3px
+  );
+}
+
+.bca-home .bca-art-star {
+  position: absolute;
+  color: var(--bca-gold);
+}
+
+.bca-home .bca-art-star-one {
+  top: 22%;
+  right: 12%;
+  font-size: 1.8rem;
+}
+
+.bca-home .bca-art-star-two {
+  bottom: 18%;
+  left: 9%;
+  font-size: 1.4rem;
+}
+
+.bca-home .bca-welcome {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  gap: 2rem;
+  margin: 0 0 3.5rem;
+}
+
+.bca-home .bca-welcome h2,
+.bca-home .bca-section-heading h2,
+.bca-home .bca-home-cta h2 {
+  margin: .6rem 0 0;
+  color: var(--bca-ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  font-weight: 500;
+  letter-spacing: -.025em;
+  line-height: 1.2;
+}
+
+.bca-home .bca-welcome > p {
+  margin: 0;
+  color: var(--bca-muted);
+  font-size: .9rem;
+  line-height: 1.9;
+}
+
+.bca-home .bca-period-section {
+  margin-bottom: 3.5rem;
+}
+
+.bca-home .bca-section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.bca-home .bca-section-heading p {
+  margin: .6rem 0 0;
+  color: var(--bca-muted);
+  font-size: .86rem;
+}
+
+.bca-home .bca-text-link {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: .5rem;
+  color: var(--bca-navy) !important;
+  font-size: .8rem;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+.bca-home .bca-text-link:hover {
+  color: var(--bca-gold-strong) !important;
+}
+
+.bca-home .bca-period-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.bca-home .bca-period-card {
+  display: flex;
+  min-height: 255px;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 1px solid #e6e1d7;
+  border-radius: 12px;
+  background: var(--bca-paper);
+  color: var(--bca-ink) !important;
+  text-decoration: none !important;
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.bca-home .bca-period-card:hover {
+  transform: translateY(-3px);
+  border-color: #c8ad78;
+  box-shadow: 0 12px 30px rgba(23, 40, 62, .07);
+}
+
+.bca-home .bca-period-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bca-home .bca-period-number {
+  color: #b8a27d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.bca-home .bca-period-icon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e7d7b7;
+  border-radius: 50%;
+  color: var(--bca-gold-strong);
+  font-size: 1.1rem;
+}
+
+.bca-home .bca-period-card-content {
+  flex: 1;
+  padding: 1.4rem 0 1.2rem;
+}
+
+.bca-home .bca-period-label {
+  color: #927342;
+  font-size: .64rem;
+  font-weight: 750;
+  letter-spacing: .12em;
+}
+
+.bca-home .bca-period-card h3 {
+  margin: .45rem 0 .5rem;
+  color: var(--bca-navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.bca-home .bca-period-card p {
+  margin: 0;
+  color: var(--bca-muted);
+  font-size: .84rem;
+  line-height: 1.7;
+}
+
+.bca-home .bca-period-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid #e9e4da;
+  color: var(--bca-navy);
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+.bca-home .bca-principles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+  padding: 1.8rem 0;
+  border-top: 1px solid #e6e1d7;
+  border-bottom: 1px solid #e6e1d7;
+}
+
+.bca-home .bca-principle {
+  display: flex;
+  align-items: flex-start;
+  gap: .9rem;
+}
+
+.bca-home .bca-principle-icon {
+  display: flex;
+  flex: 0 0 38px;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  background: #f2eadc;
+  color: #8c6b34;
+  font-size: .75rem;
+  font-weight: 800;
+}
+
+.bca-home .bca-principle h3 {
+  margin: .1rem 0 .4rem;
+  color: var(--bca-navy);
+  font-size: .9rem;
+  font-weight: 750;
+}
+
+.bca-home .bca-principle p {
+  margin: 0;
+  color: var(--bca-muted);
+  font-size: .79rem;
+  line-height: 1.75;
+}
+
+.bca-home .bca-home-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding: 1.8rem 2rem;
+  border-radius: 12px;
+  background: #f4f0e8;
+}
+
+.bca-home .bca-home-cta h2 {
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+}
+
+.bca-home .bca-home-cta p {
+  margin: .65rem 0 0;
+  color: var(--bca-muted);
+  font-size: .85rem;
+  line-height: 1.7;
+}
+
+.bca-home .bca-home-cta .bca-home-button {
+  flex-shrink: 0;
+  background: var(--bca-navy);
+  color: #fff !important;
+}
+
+.bca-home .bca-home-cta .bca-home-button:hover {
+  background: #29415f;
+}
+
+@media (max-width: 760px) {
+  .bca-home .bca-hero {
+    grid-template-columns: 1fr;
+    gap: .5rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .bca-home .bca-hero-art {
+    min-height: 205px;
+  }
+
+  .bca-home .bca-art-orbit-outer {
+    width: 210px;
+  }
+
+  .bca-home .bca-art-orbit-inner {
+    width: 165px;
+  }
+
+  .bca-home .bca-art-book {
+    width: 110px;
+  }
+
+  .bca-home .bca-book-cover {
+    min-height: 135px;
+  }
+
+  .bca-home .bca-welcome {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .bca-home .bca-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .8rem;
+  }
+
+  .bca-home .bca-principles {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .bca-home .bca-home-cta {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bca-home .bca-period-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bca-home .bca-hero h1 {
+    font-size: 2.45rem;
+  }
+
+  .bca-home .bca-hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .bca-home .bca-home-button {
+    width: 100%;
+  }
+}

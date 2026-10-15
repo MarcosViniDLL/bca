@@ -1,4 +1,6 @@
-﻿# Introdução aos Estudos Linguísticos I
+﻿[← Voltar ao 1º período](../periodos/primeiro-periodo.md){ .bca-back-link }
+
+# Introdução aos Estudos Linguísticos I
 
 <div class="bca-section-label">1º PERÍODO</div>
 

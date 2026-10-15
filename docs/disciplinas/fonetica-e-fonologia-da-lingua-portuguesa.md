@@ -1,4 +1,6 @@
-﻿# Fonética e Fonologia da Língua Portuguesa
+﻿[← Voltar ao 2º período](../periodos/segundo-periodo.md){ .bca-back-link }
+
+# Fonética e Fonologia da Língua Portuguesa
 
 <div class="bca-section-label">2º PERÍODO</div>
 

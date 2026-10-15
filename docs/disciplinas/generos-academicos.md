@@ -1,4 +1,6 @@
-﻿# Gêneros Acadêmicos
+﻿[← Voltar ao 2º período](../periodos/segundo-periodo.md){ .bca-back-link }
+
+# Gêneros Acadêmicos
 
 <div class="bca-section-label">2º PERÍODO</div>
 

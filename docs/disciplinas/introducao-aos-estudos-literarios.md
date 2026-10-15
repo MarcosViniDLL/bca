@@ -1,4 +1,6 @@
-﻿# Introdução aos Estudos Literários
+﻿[← Voltar ao 1º período](../periodos/primeiro-periodo.md){ .bca-back-link }
+
+# Introdução aos Estudos Literários
 
 <div class="bca-section-label">1º PERÍODO</div>
 

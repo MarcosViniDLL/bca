@@ -1,4 +1,6 @@
-﻿# Catálogo acadêmico
+﻿[← Voltar ao início](index.md){ .bca-back-link }
+
+# Catálogo acadêmico
 
 Explore a biblioteca de acordo com o seu período da graduação.
 

@@ -1,4 +1,6 @@
-﻿# Fundamentos da Educação
+﻿[← Voltar ao 1º período](../periodos/primeiro-periodo.md){ .bca-back-link }
+
+# Fundamentos da Educação
 
 <div class="bca-section-label">1º PERÍODO</div>
 
