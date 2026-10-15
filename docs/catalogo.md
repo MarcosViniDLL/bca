@@ -14,14 +14,14 @@ Selecione um período para visualizar as disciplinas e acessar os materiais de c
 
 <div class="bca-grid" markdown>
 
-<a class="bca-subject" href="/periodos/primeiro-periodo/">
-<strong>📘 1º Período</strong>
-<span>5 disciplinas · Fundamentos da formação acadêmica</span>
+<a class="bca-subject" href="../periodos/primeiro-periodo/">
+  <strong>📘 1º Período</strong>
+  <span>5 disciplinas · Fundamentos da formação acadêmica</span>
 </a>
 
-<a class="bca-subject" href="/periodos/segundo-periodo/">
-<strong>📗 2º Período</strong>
-<span>5 disciplinas · Continuidade dos estudos</span>
+<a class="bca-subject" href="../periodos/segundo-periodo/">
+  <strong>📗 2º Período</strong>
+  <span>5 disciplinas · Continuidade dos estudos</span>
 </a>
 
 </div>

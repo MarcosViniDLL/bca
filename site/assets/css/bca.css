@@ -1159,8 +1159,8 @@
 
 .md-header__button.md-logo {
   display: inline-flex;
-  width: 2.65rem;
-  height: 2.65rem;
+  width: 3.65rem;
+  height: 3.65rem;
   align-items: center;
   justify-content: center;
   margin: 0 0.55rem 0 0;
@@ -1169,11 +1169,12 @@
   background: #E9D7B5;
 }
 
-.md-header__button.md-logo img,
-.md-header__button.md-logo svg {
-  width: 2.65rem;
-  height: 2.65rem;
-  object-fit: contain;
+.md-header .md-header__button.md-logo img,
+.md-header .md-header__button.md-logo svg {
+  height: 28px !important;
+  width: auto !important;
+  max-height: none !important;
+  max-width: none !important;
 }
 
 .md-header__title {
