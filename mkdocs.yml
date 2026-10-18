@@ -25,6 +25,10 @@ theme:
 
 extra_css:
   - assets/css/bca.css
+  - assets/css/oficina-escrita.css
+
+extra_javascript:
+  - assets/js/oficina-escrita.js
 
 markdown_extensions:
   - attr_list
@@ -50,6 +54,8 @@ nav:
           - Teoria Literária: disciplinas/teoria-literaria.md
           - Habilidades Integradas em Língua Inglesa II: disciplinas/habilidades-integradas-lingua-inglesa-ii.md
           - Fonética e Fonologia da Língua Portuguesa: disciplinas/fonetica-e-fonologia-da-lingua-portuguesa.md
+  - Gerador de referências e citações: gerador-referencias.md
+  - Oficina de escrita acadêmica: oficina-escrita-academica.md
   - Sobre a BCA: sobre.md
 
 
