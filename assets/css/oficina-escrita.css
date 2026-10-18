@@ -1,0 +1,359 @@
+
+/* Oficina de Escrita Acadêmica — estilos isolados da BCA */
+
+.bca-workshop {
+  --bca-workshop-border: var(--md-default-fg-color--lightest, #d8dce2);
+  --bca-workshop-muted: var(--md-default-fg-color--light, #687386);
+  margin: 1.5rem 0 2rem;
+}
+
+.bca-workshop__intro {
+  margin-bottom: 1.25rem;
+}
+
+.bca-workshop__eyebrow {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--md-primary-fg-color, #5269a8);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+/* Cards de seleção das ferramentas */
+.bca-workshop__tools {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1.25rem 0 1.5rem;
+  align-items: stretch;
+}
+
+.bca-tool {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
+
+  width: 100%;
+  min-width: 0;
+  min-height: 150px;
+  padding: 1rem;
+
+  text-align: left;
+  overflow-wrap: break-word;
+  word-break: normal;
+
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--bca-workshop-border);
+  border-radius: 0.85rem;
+
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.bca-tool:hover {
+  border-color: var(--md-primary-fg-color);
+  transform: translateY(-2px);
+}
+
+.bca-tool.is-active {
+  border: 2px solid var(--md-primary-fg-color);
+  background: var(--md-code-bg-color);
+  box-shadow: 0 3px 12px rgb(0 0 0 / 5%);
+}
+
+/* Ícone dentro do card */
+.bca-tool__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: 0 0 2.5rem;
+
+  font-size: 1.35rem;
+  line-height: 1;
+
+  border-radius: 0.65rem;
+  background: var(--md-code-bg-color);
+}
+
+/* Área do título e da descrição */
+.bca-tool > span:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  width: 100%;
+  min-width: 0;
+}
+
+.bca-tool strong {
+  display: block;
+  width: 100%;
+
+  font-size: 0.88rem;
+  font-weight: 750;
+  line-height: 1.4;
+
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+.bca-tool small {
+  display: block;
+  width: 100%;
+  margin: 0;
+
+  color: var(--bca-workshop-muted);
+  font-size: 0.75rem;
+  line-height: 1.5;
+
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
+}
+
+/* Área dos formulários e do resultado */
+.bca-workshop__workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.bca-workshop__panel,
+.bca-workshop__guidance {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 1.15rem;
+  border: 1px solid var(--bca-workshop-border);
+  border-radius: 0.9rem;
+  background: var(--md-default-bg-color);
+}
+
+.bca-panel-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.bca-panel-heading h2 {
+  margin: 0 0 0.45rem;
+  font-size: 1.25rem;
+}
+
+.bca-muted {
+  color: var(--bca-workshop-muted);
+  font-size: 0.82rem;
+}
+
+/* Campos dos formulários */
+.bca-field {
+  margin: 1rem 0;
+}
+
+.bca-field label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.bca-field input,
+.bca-field textarea,
+#bca-output {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.7rem 0.75rem;
+
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+
+  border: 1px solid var(--bca-workshop-border);
+  border-radius: 0.55rem;
+
+  font: inherit;
+  font-size: 0.82rem;
+}
+
+.bca-field input:focus,
+.bca-field textarea:focus,
+#bca-output:focus {
+  outline: 2px solid var(--md-primary-fg-color);
+  outline-offset: 1px;
+}
+
+.bca-field textarea,
+#bca-output {
+  resize: vertical;
+  line-height: 1.55;
+}
+
+#bca-output {
+  min-height: 440px;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.78rem;
+}
+
+/* Botões */
+.bca-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.bca-primary-button,
+.bca-secondary-button,
+.bca-text-button {
+  padding: 0.6rem 0.85rem;
+  border-radius: 0.55rem;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.bca-primary-button {
+  color: var(--md-primary-bg-color);
+  background: var(--md-primary-fg-color);
+  border: 1px solid var(--md-primary-fg-color);
+}
+
+.bca-secondary-button {
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--bca-workshop-border);
+}
+
+.bca-text-button {
+  padding: 0.2rem 0;
+  color: var(--md-primary-fg-color);
+  background: transparent;
+  border: 0;
+}
+
+.bca-primary-button:hover,
+.bca-secondary-button:hover {
+  filter: brightness(0.96);
+}
+
+/* Mensagens de apoio */
+.bca-small-note {
+  margin: 0.65rem 0 0;
+  color: var(--bca-workshop-muted);
+  font-size: 0.72rem;
+}
+
+.bca-output-status {
+  padding: 0.25rem 0.5rem;
+  border-radius: 99px;
+  background: var(--md-code-bg-color);
+  color: var(--bca-workshop-muted);
+  font-size: 0.68rem;
+  white-space: normal;
+}
+
+/* Orientações ao final da página */
+.bca-workshop__guidance {
+  margin-top: 1rem;
+}
+
+.bca-workshop__guidance h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.bca-workshop__guidance li {
+  margin: 0.45rem 0;
+}
+
+/* Acessibilidade */
+.bca-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Telas intermediárias: três cards por linha */
+@media (max-width: 1100px) {
+  .bca-workshop__tools {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .bca-tool {
+    min-height: 140px;
+  }
+}
+
+/* Tablets e celulares: dois cards por linha */
+@media (max-width: 900px) {
+  .bca-workshop__workspace {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #bca-output {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bca-workshop__tools {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem;
+  }
+
+  .bca-tool {
+    min-height: 145px;
+    padding: 0.85rem;
+  }
+
+  .bca-tool strong {
+    font-size: 0.84rem;
+  }
+
+  .bca-tool small {
+    font-size: 0.72rem;
+  }
+
+  .bca-workshop__panel,
+  .bca-workshop__guidance {
+    padding: 0.85rem;
+  }
+
+  .bca-panel-heading {
+    flex-wrap: wrap;
+  }
+}
+
+/* Celulares muito estreitos: card horizontal */
+@media (max-width: 360px) {
+  .bca-workshop__tools {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .bca-tool {
+    display: grid;
+    grid-template-columns: 2.5rem minmax(0, 1fr);
+    align-items: start;
+    gap: 0.8rem;
+    min-height: auto;
+  }
+}
