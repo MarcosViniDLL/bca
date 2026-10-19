@@ -11,7 +11,7 @@ theme:
   palette:
     - scheme: default
       primary: custom
-      accent: amber
+      accent: custom
   features:
     - navigation.instant
     - navigation.sections
